@@ -4,6 +4,7 @@ body {
   font-weight: 300 !important;
   margin:0px;
   background: rgba(75, 75, 75, .75);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, .5)
 }
 body h1 {
   font-weight: 300;
@@ -30,7 +31,13 @@ article {
   border: 1px solid #000000;
   padding: 10px;
   margin: 5px;
-
+}
+a article {
+  text-decoration: none;
+  color:black;
+}
+article:hover {
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .5)
 }
 
 article img {
@@ -40,8 +47,28 @@ article img {
 a {
   text-decoration: none;
 }
+a:hover {
+
+}
 
 p {
-
   text-align: justify;
+}
+
+.my-input {
+  margin: 10px;
+  padding: 10px 20px;
+  display: block;
+  width: 90%;
+}
+
+.my-input:focus {
+  background: #d5ffc2;
+  color: #0f8034;
+  outline:none;
+  border:1px solid #000000;
+}
+
+article:active {
+  opacity: .4;
 }
