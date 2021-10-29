@@ -15,10 +15,23 @@ var subscribeButton = document.getElementById("subscribe_button");
 subscribeButton.addEventListener("click",buttonClicked);
 
 function buttonClicked(){
-	topStories.set
-	isPremiumUser = true;
-	console.log("Thank you for becoming a Premium User!");
-	subscribeButton.remove();
+	var searchText = (document.getElementsByClassName("my-input"))[0];
+	var textArea = (document.getElementsByClassName("my-textarea"))[0];
+	var results = document.getElementById("text");
+	results.innerHTML = searchText.value;
+	results.innerHTML += "\nMessage: " + textArea.text;
 }
 
+var hobbies = ["Gaming","Coding","Reading","Music","Streaming"];
 
+hobbies.forEach(function(item,index){
+	console.log("I like",item,index);
+});
+
+var searchTerm = "Fishing"
+if(hobbies.indexOf(searchTerm) >= 0){
+	console.log(searchTerm,"is a hobby");
+}
+else {
+	console.log(searchTerm,"is not a hobby");
+}
