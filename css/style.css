@@ -154,6 +154,11 @@ article:active {
   border: 1px solid #ddd;
 }
 
+#twitch-embed {
+  margin-left: 25px;
+  padding: 25px;
+}
+
 #wago-1cNC5sG1W a {display: inline; padding: 0 2px; margin: 0; border:0}
 #wago-1cNC5sG1W img {display: inline; padding: 0; margin: 0; border: 0; height: 50px}
 #wago-1cNC5sG1W button {display: inline; padding: 4px 16px; min-width: 130px; cursor: pointer; background-color: #000; color: rgba(255,255,255,.87); border: 0; text-align: center; vertical-align: top; border-radius: 6px}

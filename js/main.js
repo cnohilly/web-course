@@ -53,6 +53,9 @@ $(document).ready(function(){
 	
 	var el = document.getElementById('text');
 
+	$('[href="https://google.com"]').on('click',function(event){
+		event.preventDefault();
+	});
 	$('[data-trigger="dropdown"]').on('mouseenter',function(){
 		var submenu = $(this).parent().find('.submenu');
 		submenu.fadeIn(300);

@@ -29,11 +29,39 @@
       </ul>
     </header>
 
+<!-- Add a placeholder for the Twitch embed -->
+<div id="twitch-embed"></div>
+
+<!-- Load the Twitch embed script -->
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+<!-- Create a Twitch.Player object. This will render within the placeholder div -->
+<script type="text/javascript">
+  new Twitch.Embed("twitch-embed", {
+        width: 1280,
+        height: 720,
+        channel: "ChilledChaos",
+        allowfullscreen: true,
+        parent: ["www.cdorkk.com"]
+      });
+</script>
+    
+    <!-- <script type="text/javascript">
+      var options = {
+        width: 1280,
+        height: 720,
+        channel: "skadj",
+      };
+      var player = new Twitch.Player("twitch-embed", options);
+      player.setVolume(0.5);
+    </script> -->
+
     <button id="subscribe_button">Subscribe</button>
 
 
     <input placeholder="Search..." class="my-input" />
     <div id="text"> Search Output </div>
+    <a href="https://google.com" target="_blank">Go to Google</a>
     <section id="editing-section">
       <textarea id="edit-text" placeholder="Your message"></textarea>
       <button id="prepend">Prepend</button>
@@ -44,28 +72,28 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ipsum neque, fringilla eu orci ultrices, mollis auctor erat. Duis tincidunt convallis urna et rhoncus. In nec dapibus metus, eu auctor turpis. Vestibulum accumsan, mi non porta interdum, neque erat sagittis turpis, sed venenatis erat libero a tellus. Aenean tincidunt ante vitae laoreet vehicula. Duis consequat, arcu sed pharetra pretium, ex ligula dapibus quam, volutpat fringilla neque neque sit amet magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur augue ex, pellentesque fringilla orci ac, hendrerit vulputate orci. Sed tincidunt scelerisque ante, vel aliquam dolor egestas quis. Pellentesque iaculis sit amet risus ac pellentesque.</p>
     </section>
     <section id="top-stories">
-      <a href="https://www.icy-veins.com/forums/topic/61190-monk-class-changes-patch-915-build-40383/">
+      <a href="https://www.icy-veins.com/forums/topic/61190-monk-class-changes-patch-915-build-40383/" target="_blank">
         <article>
           <img src="./content/monk.png">
           <h3>Monk Changes</h3>
           <p>Upcoming changes to the Monk class that are up on the <a href="">PTR</a>.</p>
         </article>
       </a>
-      <a href="https://www.icy-veins.com/forums/topic/61181-priest-class-changes-patch-915-build-40383/">
+      <a href="https://www.icy-veins.com/forums/topic/61181-priest-class-changes-patch-915-build-40383/" target="_blank">
         <article>
           <img src="./content/priest.png">
           <h3>Priest Changes</h3>
           <p>Upcoming changes to the Priest class that are up on the PTR.</p>
         </article>
       </a>
-      <a href="https://www.icy-veins.com/forums/topic/61179-hunter-class-changes-patch-915-build-40383/">
+      <a href="https://www.icy-veins.com/forums/topic/61179-hunter-class-changes-patch-915-build-40383/" target="_blank">
         <article>
           <img src="./content/hunter.png">
           <h3>Hunter Changes</h3>
           <p>Upcoming changes to the Hunter class that are up on the PTR.</p>
         </article>
       </a>
-      <a href="https://www.icy-veins.com/forums/topic/61196-rogue-class-changes-patch-915-build-40383/">
+      <a href="https://www.icy-veins.com/forums/topic/61196-rogue-class-changes-patch-915-build-40383/" target="_blank">
         <article>
           <img src="./content/rogue.png">
           <h3>Rogue Changes</h3>
@@ -134,6 +162,7 @@
       </div>
    	</section>
 
+     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
