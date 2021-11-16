@@ -49,6 +49,7 @@ for (let i = 15; i < 900; i++){
 
 }
 
+
 $(document).ready(function(){
 	
 	var el = document.getElementById('text');

@@ -13,8 +13,9 @@
   <body>
     <header id="main-header">
       <section id="site-title-header">
-        <h1 id="site-title">World of Warcraft Articles from Icyveins</h1>
-        <h4 id="site-subtitle">All of the World of Warcraft updates and related news from Icyveins</h4>
+        <a href="https://www.cdorkk.com"><img id="site-logo" src="./content/DorkkShield.png"></a>
+        <h1 id="site-title">cDORKK</h1>
+        <h4 id="site-subtitle">Twitch, YouTube and WeakAuras</h4>
       </section>
       <ul class="profile-menu">
         <li><a class="profile-menu-trigger" data-trigger="dropdown" href="#">Logged in as cnohilly</a>
@@ -29,8 +30,8 @@
       </ul>
     </header>
 
-<!-- Add a placeholder for the Twitch embed -->
 <section id="twitch-section">
+<!-- Add a placeholder for the Twitch embed -->
 <div id="twitch-embed"></div>
 
 <!-- Load the Twitch embed script -->
@@ -41,8 +42,7 @@
   new Twitch.Embed("twitch-embed", {
         width: 1280,
         height: 720,
-        channel: "ChilledChaos",
-        allowfullscreen: true,
+        channel: "cDorkk",
         parent: ["www.cdorkk.com"]
       });
 </script>
