@@ -154,9 +154,11 @@ article:active {
   border: 1px solid #ddd;
 }
 
-#twitch-embed {
-  margin-left: 25px;
-  padding: 25px;
+#twitch-section {
+  margin: auto;
+  width: fit-content;
+  padding: 50px;
+  align-content: center;
 }
 
 #wago-1cNC5sG1W a {display: inline; padding: 0 2px; margin: 0; border:0}
