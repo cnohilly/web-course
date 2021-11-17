@@ -54,6 +54,8 @@ $(document).ready(function(){
 	
 	var el = document.getElementById('text');
 
+	$('#main-header').find('h1').addClass("Test");
+
 	$('[href="https://google.com"]').on('click',function(event){
 		event.preventDefault();
 	});
