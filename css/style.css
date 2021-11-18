@@ -190,15 +190,15 @@ article:active {
 }
 
 #editing-section, #main-text {
-  margin-left: 20px;
-  
+  margin-left: 80px;
+  margin-right: 120px;
 }
 
 #edit-text {
   margin: 10px 0px;
   padding: 10px 20px;
   display: block;
-  width: 90%;
+  width: 100%;
   border-radius: 5px;
   border: 1px solid #ddd;
   /* background-color: rgb(170, 170, 170); */
