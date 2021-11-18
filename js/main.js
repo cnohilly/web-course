@@ -49,10 +49,31 @@ for (let i = 15; i < 900; i++){
 
 }
 
+function scrolltop() {
+	var top = 0;
+	if (typeof(window.pageYOffset) == "number") {
+	  top = window.pageYOffset;
+	} else if (document.body && document.body.scrollTop) {
+	  top = document.body.scrollTop;
+	} else if (document.documentElement && document.documentElement.scrollTop) {
+	  top = document.documentElement.scrollTop;
+	}
+	return top;
+  }
 
 $(document).ready(function(){
 	
 	var el = document.getElementById('text');
+
+	$(window).scroll(function(e){
+		if(window.pageYOffset >= 100){
+			$('#navigation-bar').css("position","fixed");
+			console.log("triggered");
+		} else {
+			$('#navigation-bar').css("position","relative");
+		}
+		console.log("Scrolled...");
+	});
 
 	$('#main-header').find('h1').addClass("Test");
 
