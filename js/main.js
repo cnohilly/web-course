@@ -68,23 +68,30 @@ $(document).ready(function(){
 	$(window).scroll(function(e){
 		if(window.pageYOffset >= 100){
 			$('#navigation-bar').css("position","fixed");
-			console.log("triggered");
 		} else {
 			$('#navigation-bar').css("position","relative");
 		}
-		console.log("Scrolled...");
 	});
 
 	$('#main-header').find('h1').addClass("Test");
 
-	$('[href="https://google.com"]').on('click',function(event){
-		event.preventDefault();
-	});
 	$('[data-trigger="dropdown"]').on('mouseenter',function(){
 		var submenu = $(this).parent().find('.submenu');
 		submenu.fadeIn(300);
 
 		$('.profile-menu').on('mouseleave',function(){
+			submenu.fadeOut(300);
+		});
+	});
+	
+	$('.navigation-button').on('mouseenter',function(e){
+		var submenu = $(this).parent().parent().find('.navigation-submenu');
+		if(submenu.css("display") == "none"){
+			console.log("display");
+			submenu.fadeIn(300);
+		}
+		submenu.on('mouseleave',function(){
+			console.log("trigger");
 			submenu.fadeOut(300);
 		});
 	});
@@ -95,9 +102,6 @@ $(document).ready(function(){
 		var content = $('#edit-text').val();
 		console.log(content);
 
-		if(action == "prepend"){
-
-		}
 		switch(action){
 			case "prepend": console.log("Prepend");
 			$('#main-text').prepend('<p>' + content + '</p>');
