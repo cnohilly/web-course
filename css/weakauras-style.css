@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+#ui-section {
+  width: 90%;
+  padding: 50px;
+  margin: auto;
+  display: inline-block;
+  text-align: center;
+}
+
+#image-section {
+  width: 60%;
+  margin: auto;
+  display: inline-block;
+}
+
+#string-section {
+  width: 60%;
+  margin: auto;
+  display: inline-block;
+  float: right;
+}
+
+.ui-image, .ui-base-image {
+  width: 60%;
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 30%;
+}
+.ui-image:hover {
+  opacity: 100%;
+}
+
+#chatbox{
+  clip-path: polygon(0% 81%, 21.5% 81%, 21.5% 100%, 0% 100%);
+}
+#unitframes{
+  clip-path: polygon(28% 61%, 72% 61%, 72% 76%, 57% 76%, 57% 68%, 43% 68%, 43% 76%, 28% 76%)
+}
+#weakauras1 {
+  clip-path: polygon(57% 74%, 57% 68%, 43% 68%, 43% 74%)
+}
+#weakauras2 {
+  clip-path: polygon(57% 74%, 57% 78%, 43% 78%, 43% 74%)
+}
+
+#string-section ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+#wago-1cNC5sG1W a {display: inline; padding: 0 2px; margin: 0; border:0}
+#wago-1cNC5sG1W img {display: inline; padding: 0; margin: 0; border: 0; height: 50px}
+#wago-1cNC5sG1W button {display: inline; padding: 4px 16px; min-width: 130px; cursor: pointer; background-color: #000; color: rgba(255,255,255,.87); border: 0; text-align: center; vertical-align: top; border-radius: 6px}
+#wago-1cNC5sG1W button:hover {background-color:#040404}
+#wago-1cNC5sG1W .clickToCopy {display: block; padding: 0; margin: 0; font-size: 10px}
+#wago-1cNC5sG1W .wagoName {display: block; padding: 0; margin: 4px 0; font-weight: bold; font-size: 13px}

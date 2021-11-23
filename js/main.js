@@ -96,6 +96,12 @@ $(document).ready(function(){
 		});
 	});
 
+
+	$('.ui-image').on('mouseenter',function(){
+		console.log("Entered " + $(this).attr("id"));
+	});
+	
+
 	$('#prepend, #append, #replace').on('click', function(e){
 		var el = $(e.currentTarget);
 		var action = el.attr('id');
