@@ -23,18 +23,23 @@
 }
 
 .ui-image, .ui-base-image {
-  width: 60%;
-  margin: auto;
+  /* width: 80%; */
+  width: inherit;
+  display: inherit;
+  margin:inherit;
   position: absolute;
-  top: 0px;
+  top: 250px;
   bottom: 0px;
   left: 0px;
   right: 0px;
+  opacity: 0%;
+}
+.ui-base-image {
   opacity: 30%;
 }
-.ui-image:hover {
+/* .ui-image:hover {
   opacity: 100%;
-}
+} */
 
 #chatbox{
   clip-path: polygon(0% 81%, 21.5% 81%, 21.5% 100%, 0% 100%);

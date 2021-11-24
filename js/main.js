@@ -63,6 +63,8 @@ function scrolltop() {
 
 $(document).ready(function(){
 	
+
+	var initialImageOpacity = $('.ui-image').css("opacity");
 	var el = document.getElementById('text');
 
 	$(window).scroll(function(e){
@@ -97,8 +99,34 @@ $(document).ready(function(){
 	});
 
 
-	$('.ui-image').on('mouseenter',function(){
-		console.log("Entered " + $(this).attr("id"));
+	$('.ui-image').on('mouseenter',function(e){
+		var el = $(e.currentTarget);
+		var action = el.attr('id');
+		console.log()
+
+		switch(action){
+			case "chatbox": 
+			case "unitframes": 	$('#chatbox').css("opacity","100%");
+								$('#unitframes').css("opacity","100%");
+								break;
+			case "weakauras1": $('#weakauras1').css("opacity",'100%');
+			break;
+			case "weakauras2": $('#weakauras2').css("opacity","100%");
+			break;
+		}
+		$('.ui-image').on('mouseleave',function(){
+			var leaveAction = $(this).attr('id');
+			switch(leaveAction){
+				case "chatbox": 
+				case "unitframes":	$('#chatbox').css("opacity",initialImageOpacity);
+									$('#unitframes').css("opacity",initialImageOpacity);
+									break;
+				case "weakauras1": $('#weakauras1').css("opacity",initialImageOpacity);
+				break;
+				case "weakauras2": $('#weakauras2').css("opacity",initialImageOpacity);
+				break;
+			}
+		});
 	});
 	
 
