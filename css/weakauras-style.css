@@ -3,44 +3,45 @@
 
 #ui-section {
   width: 90%;
-  padding: 50px;
+  top: 200px;
   margin: auto;
-  display: inline-block;
+  display: block;
   text-align: center;
+}
+
+
+#class-section {
+  width: 20%;
+  position: relative;
+  float: left;
+  margin: inherit;
+  margin-left: 2%;
+}
+#class-section ul {
+  text-decoration: none;
+  list-style: none;
+}
+#class-section ul li {
+  border: 1px solid white;
+  padding: 10px 0px;
+  margin: 5px 0px;
+  width: 100%;
 }
 
 #image-section {
   width: 60%;
-  margin: auto;
-  display: inline-block;
+  position: relative;
+  margin: inherit;
 }
-
-#string-section {
-  width: 60%;
-  margin: auto;
-  display: inline-block;
-  float: right;
-}
-
 .ui-image, .ui-base-image {
-  /* width: 80%; */
-  width: inherit;
+  width: 100%;
   display: inherit;
-  margin:inherit;
   position: absolute;
-  top: 250px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
   opacity: 0%;
 }
 .ui-base-image {
   opacity: 30%;
 }
-/* .ui-image:hover {
-  opacity: 100%;
-} */
-
 #chatbox{
   clip-path: polygon(0% 81%, 21.5% 81%, 21.5% 100%, 0% 100%);
 }
@@ -54,9 +55,22 @@
   clip-path: polygon(57% 74%, 57% 78%, 43% 78%, 43% 74%)
 }
 
+#string-section {
+  width: 20%;
+  position: relative;
+  float: right;
+  margin: inherit;
+  margin-left: 2%;
+}
 #string-section ul {
   text-decoration: none;
   list-style: none;
+}
+#string-section ul li {
+  border: 1px solid white;
+  padding: 10px 0px;
+  margin: 5px 0px;
+  width: 100%;
 }
 
 #wago-1cNC5sG1W a {display: inline; padding: 0 2px; margin: 0; border:0}
