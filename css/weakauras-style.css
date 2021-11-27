@@ -2,26 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 #ui-section {
-  width: 90%;
-  top: 200px;
+  width: 95%;
   margin: auto;
   display: block;
   text-align: center;
 }
 
-
 #class-section {
-  width: 20%;
+  width: 18%;
   position: relative;
   float: left;
   margin: inherit;
-  margin-left: 2%;
 }
-#class-section ul {
+#class-section ul, #string-section ul {
   text-decoration: none;
   list-style: none;
+  padding: 0;
 }
-#class-section ul li {
+#class-section ul li, #string-section ul li {
   border: 1px solid white;
   padding: 10px 0px;
   margin: 5px 0px;
@@ -56,21 +54,10 @@
 }
 
 #string-section {
-  width: 20%;
+  width: 18%;
   position: relative;
   float: right;
   margin: inherit;
-  margin-left: 2%;
-}
-#string-section ul {
-  text-decoration: none;
-  list-style: none;
-}
-#string-section ul li {
-  border: 1px solid white;
-  padding: 10px 0px;
-  margin: 5px 0px;
-  width: 100%;
 }
 
 #wago-1cNC5sG1W a {display: inline; padding: 0 2px; margin: 0; border:0}
