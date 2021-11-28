@@ -100,59 +100,48 @@ $(document).ready(function(){
 			submenu.fadeOut(300);
 		});
 	});
+ 
+	$('.class-option').on('mouseenter',function(e){
+		$(this).css({"background-color":hoveredUIOptionsBackgroundColor, "color":hoveredUIOptionsTextColor});
+		$('.class-option').on('mouseleave',function(){
+			$(this).css({"background-color":initialUIOptionsBackgroundColor, "color":initialUIOptionsTextColor});
+		});
+	});
 
+	var baseUIPaths = new Map();
+	baseUIPaths.set('chatbox',$('img.chatbox').css('clip-path'));
+	baseUIPaths.set('unitframes',$('img.unitframes').css('clip-path'));
+	baseUIPaths.set('weakauras1',$('img.weakauras1').css('clip-path'));
+	baseUIPaths.set('weakauras2',$('img.weakauras2').css('clip-path'));
+
+	$('.class-option').on('click',function(e){
+		var className = $(this)[0].innerText;
+		console.log(className);
+		$('.ui-base-image').attr("src","../content/WOWUI-"+className+".jpg");
+		$('.ui-image').attr("src","../content/WOWUI-"+className+".jpg");
+		switch(className){
+			case 'Paladin': $('img.unitframes').css('clip-path',"polygon(27% 68%, 73% 68%, 73% 75%, 58.5% 75%, 58.5% 72%, 41.5% 72%, 41.5% 75%, 27% 75%)");
+							$('img.weakauras1').css('clip-path',"polygon(58.5% 78%, 58.5% 72%, 41.5% 72%, 41.5% 78%)");
+							$('img.weakauras2').css('clip-path',"polygon(60% 78%, 60% 82%, 40% 82%, 40% 78%)")
+			break;
+			default: 	$('img.unitframes').css('clip-path',baseUIPaths.get('unitframes'));
+						$('img.weakauras1').css('clip-path',baseUIPaths.get('weakauras1'));
+						$('img.weakauras2').css('clip-path',baseUIPaths.get('weakauras2'));
+			break;
+		}
+	});
 
 	$('.ui-image, .string-option').on('mouseenter',function(e){
 		var el = $(e.currentTarget);
-		var action = el.attr('id');
 		var classes = el.attr('class').split(" ");
 		$("img." + classes[1]).css("opacity",1);
 		$("li." + classes[1]).css({"background-color":hoveredUIOptionsBackgroundColor, "color":hoveredUIOptionsTextColor});
 
-		// switch(action){
-		// 	case "chatbox":
-		// 	case "unitframes": 	//imgFlipFlop('img#chatbox');
-		// 						//imgFlipFlop('img#unitframes');
-		// 						//$('img#chatbox').css("opacity",1);
-		// 						//$('img#unitframes').css("opacity",1);
-		// 						$('.elvui').css("opacity",1);
-		// 						$('li#elvui').css({"background-color":hoveredUIOptionsBackgroundColor,"color":hoveredUIOptionsTextColor});
-		// 						break;
-		// 	case "weakauras1": $('#weakauras1').css("opacity",'100%');
-		// 	break;
-		// 	case "weakauras2": $('#weakauras2').css("opacity","100%");
-		// 	break;
-		// }
-		
 		$('.ui-image, .string-option').on('mouseleave',function(){
 			$("img." + classes[1]).css("opacity",0);
 			$("li." + classes[1]).css({"background-color":initialUIOptionsBackgroundColor, "color":initialUIOptionsTextColor});
-			// var leaveAction = $(this).attr('id');
-			// switch(leaveAction){
-			// 	case "chatbox": 
-			// 	case "unitframes":	//imgFlipFlop('img#chatbox');
-			// 						//imgFlipFlop('img#unitframes');
-			// 						//$('#chatbox').css("opacity",initialImageOpacity);
-			// 						//$('#unitframes').css("opacity",initialImageOpacity);
-			// 						$('.elvui').css("opacity",0);
-			// 						break;
-			// 	case "weakauras1": $('#weakauras1').css("opacity",initialImageOpacity);
-			// 	break;
-			// 	case "weakauras2": $('#weakauras2').css("opacity",initialImageOpacity);
-			// 	break;
-			// }
 		});
 	});
-
-	function imgFlipFlop(target){	
-		switch($(target).css('opacity')){
-			case '0': $(target).css('opacity',1);
-			break;
-			case '1': $(target).css('opacity',0);
-			break;
-		}
-	}
-	
 
 	$('#prepend, #append, #replace').on('click', function(e){
 		var el = $(e.currentTarget);

@@ -8,11 +8,17 @@
   text-align: center;
 }
 
-#class-section {
+#class-section, #string-section {
   width: 18%;
+  min-width: 150px;
   position: relative;
-  float: left;
   margin: inherit;
+}
+#class-section {
+  float: left;
+}
+#string-section {
+  float: right;
 }
 #class-section ul, #string-section ul {
   text-decoration: none;
@@ -30,6 +36,7 @@
 
 #image-section {
   width: 60%;
+  min-width: 500px;
   position: relative;
   margin: inherit;
 }
@@ -43,23 +50,16 @@
   opacity: 30%;
 }
 img.chatbox{
-  clip-path: polygon(0% 81%, 21.5% 81%, 21.5% 100%, 0% 100%);
+  clip-path: polygon(0% 79%, 24% 79%, 24% 100%, 0% 100%);
 }
 img.unitframes{
-  clip-path: polygon(28% 61%, 72% 61%, 72% 76%, 57% 76%, 57% 68%, 43% 68%, 43% 76%, 28% 76%)
+  clip-path: polygon(27% 68%, 73% 68%, 73% 76%, 58.5% 76%, 58.5% 70%, 41.5% 70%, 41.5% 76%, 27% 76%);
 }
 img.weakauras1 {
-  clip-path: polygon(57% 74%, 57% 68%, 43% 68%, 43% 74%)
+  clip-path: polygon(58.5% 76%, 58.5% 70%, 41.5% 70%, 41.5% 76%);
 }
 img.weakauras2 {
-  clip-path: polygon(57% 74%, 57% 78%, 43% 78%, 43% 74%)
-}
-
-#string-section {
-  width: 18%;
-  position: relative;
-  float: right;
-  margin: inherit;
+  clip-path: polygon(60% 76%, 60% 80%, 40% 80%, 40% 76%);
 }
 
 #wago-1cNC5sG1W a {display: inline; padding: 0 2px; margin: 0; border:0}
