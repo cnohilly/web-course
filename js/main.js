@@ -108,24 +108,34 @@ $(document).ready(function(){
 		});
 	});
 
-	var baseUIPaths = new Map();
-	baseUIPaths.set('chatbox',$('img.chatbox').css('clip-path'));
-	baseUIPaths.set('unitframes',$('img.unitframes').css('clip-path'));
-	baseUIPaths.set('weakauras1',$('img.weakauras1').css('clip-path'));
-	baseUIPaths.set('weakauras2',$('img.weakauras2').css('clip-path'));
+	// Dynamically gets the default Clip-Paths that is used for most Class' UIs
+	var defaultUIClipPaths = new Map();
+	var uiImages = $('img.ui-image');
+	var numElements = uiImages.length;
+	for (let i = 0; i < numElements; i++){
+		imgClass = uiImages.attr('class').split(" ").pop();
+		defaultUIClipPaths.set(imgClass,$('img.'+imgClass).css('clip-path'));
+		uiImages.splice(0,1);
+	}
+
+	// Used for classes that have a secondary power bar that would offset the UI
+	var secondaryPowerUIClipPaths = new Map(defaultUIClipPaths);
+	secondaryPowerUIClipPaths.set('unitframes',"polygon(27% 68%, 73% 68%, 73% 76%, 58.5% 76%, 58.5% 72%, 41.5% 72%, 41.5% 76%, 27% 76%)");
+	secondaryPowerUIClipPaths.set('weakauras1',"polygon(58.5% 78%, 58.5% 72%, 41.5% 72%, 41.5% 78%)");
+	secondaryPowerUIClipPaths.set('weakauras2',"polygon(60% 78%, 60% 82%, 40% 82%, 40% 78%)");
 
 	$('.class-option').on('click',function(e){
 		var className = $(this)[0].innerText;
 		$('.ui-base-image').attr("src","../content/WOWUI-"+className+".jpg");
 		$('.ui-image').attr("src","../content/WOWUI-"+className+".jpg");
 		switch(className){
-			case 'Paladin': $('img.unitframes').css('clip-path',"polygon(27% 68%, 73% 68%, 73% 75%, 58.5% 75%, 58.5% 72%, 41.5% 72%, 41.5% 75%, 27% 75%)");
-							$('img.weakauras1').css('clip-path',"polygon(58.5% 78%, 58.5% 72%, 41.5% 72%, 41.5% 78%)");
-							$('img.weakauras2').css('clip-path',"polygon(60% 78%, 60% 82%, 40% 82%, 40% 78%)")
+			case 'Paladin': for ([key,value] of secondaryPowerUIClipPaths.entries()){
+								$('img.'+key).css('clip-path',value);
+							}
 			break;
-			default: 	$('img.unitframes').css('clip-path',baseUIPaths.get('unitframes'));
-						$('img.weakauras1').css('clip-path',baseUIPaths.get('weakauras1'));
-						$('img.weakauras2').css('clip-path',baseUIPaths.get('weakauras2'));
+			default: 	for ([key, value] of defaultUIClipPaths.entries()){
+							$('img.'+key).css('clip-path',value);
+						}
 			break;
 		}
 	});
