@@ -25,13 +25,21 @@
   list-style: none;
   padding: 0;
 }
-#class-section ul li, #string-section ul li {
+.class-option, .string-option { 
   border: 1px solid white;
   padding: 10px 0px;
   margin: 5px 0px;
-  width: 100%;
+  width: 100%; 
   background-color: rgb(32, 34, 42);
   color: white;
+}
+#class-section h2, #string-section h2{
+  margin: 10px 0px;
+  font-size: 32px;
+}
+#string-section div {
+  /* opacity:0; */
+  display:none;
 }
 
 #image-section {
@@ -55,6 +63,9 @@ img.chatbox{
 img.unitframes{
   clip-path: polygon(27% 68%, 73% 68%, 73% 76%, 58.5% 76%, 58.5% 70%, 41.5% 70%, 41.5% 76%, 27% 76%);
 }
+img.actionbars{
+  clip-path: polygon(33% 88%, 68% 88%, 68% 98%, 33% 98%);
+}
 img.weakauras1 {
   clip-path: polygon(58.5% 76%, 58.5% 70%, 41.5% 70%, 41.5% 76%);
 }
@@ -71,9 +82,10 @@ img.weakauras5 {
   clip-path: polygon(36% 59.5%, 36% 64%, 31% 64%, 31% 59.5%);
 }
 
-#wago-1cNC5sG1W a {display: inline; padding: 0 2px; margin: 0; border:0}
-#wago-1cNC5sG1W img {display: inline; padding: 0; margin: 0; border: 0; height: 50px}
-#wago-1cNC5sG1W button {display: inline; padding: 4px 16px; min-width: 130px; cursor: pointer; background-color: #000; color: rgba(255,255,255,.87); border: 0; text-align: center; vertical-align: top; border-radius: 6px}
-#wago-1cNC5sG1W button:hover {background-color:#040404}
-#wago-1cNC5sG1W .clickToCopy {display: block; padding: 0; margin: 0; font-size: 10px}
-#wago-1cNC5sG1W .wagoName {display: block; padding: 0; margin: 4px 0; font-weight: bold; font-size: 13px}
+#wago-section {
+  display: none;
+}
+
+/* .wagoEmbed button, .wagoEmbed img {
+  margin: 5px 0px !important;
+} */

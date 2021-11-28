@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+::-webkit-scrollbar{
+  background-color: #202324;
+  color: #aba499;
+}
+::-webkit-scrollbar-corner {
+  background-color: #181a1b;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #454a4d;
+}
+
+
 body {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300 !important;
