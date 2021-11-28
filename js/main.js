@@ -116,7 +116,6 @@ $(document).ready(function(){
 
 	$('.class-option').on('click',function(e){
 		var className = $(this)[0].innerText;
-		console.log(className);
 		$('.ui-base-image').attr("src","../content/WOWUI-"+className+".jpg");
 		$('.ui-image').attr("src","../content/WOWUI-"+className+".jpg");
 		switch(className){
