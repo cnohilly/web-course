@@ -24,6 +24,8 @@
   padding: 10px 0px;
   margin: 5px 0px;
   width: 100%;
+  background-color: rgb(32, 34, 42);
+  color: white;
 }
 
 #image-section {
@@ -40,16 +42,16 @@
 .ui-base-image {
   opacity: 30%;
 }
-#chatbox{
+img.chatbox{
   clip-path: polygon(0% 81%, 21.5% 81%, 21.5% 100%, 0% 100%);
 }
-#unitframes{
+img.unitframes{
   clip-path: polygon(28% 61%, 72% 61%, 72% 76%, 57% 76%, 57% 68%, 43% 68%, 43% 76%, 28% 76%)
 }
-#weakauras1 {
+img.weakauras1 {
   clip-path: polygon(57% 74%, 57% 68%, 43% 68%, 43% 74%)
 }
-#weakauras2 {
+img.weakauras2 {
   clip-path: polygon(57% 74%, 57% 78%, 43% 78%, 43% 74%)
 }
 
