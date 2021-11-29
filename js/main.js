@@ -116,7 +116,7 @@ $(document).ready(function(){
 		defaultUIClipPaths.set(imgClass,$('img.'+imgClass).css('clip-path'));
 		uiImages.splice(0,1);
 	}
-	
+
 	// Used for classes that have a secondary power bar that would offset the UI
 	var secondaryPowerUIClipPaths = new Map(defaultUIClipPaths);
 	secondaryPowerUIClipPaths.set('unitframes',"polygon(27% 68%, 73% 68%, 73% 76%, 58.5% 76%, 58.5% 72%, 41.5% 72%, 41.5% 76%, 27% 76%)");
@@ -153,11 +153,14 @@ $(document).ready(function(){
 		});
 	});
 
-	$('.string-option div').append(document.createTextNode("Copied!"));
+	// $('.string-option div').append(document.createTextNode("Copied!"));
 
 	$('.string-option').on('click',function(e){
 		var stringName = $(this).attr('class').split(" ").pop();
-		$('.string-option.'+stringName+' div').css('display','block').fadeOut(1500);
+		// $('.string-option.'+stringName+' div').css('display','block').fadeOut(1500);
+		var text = $('.string-option.'+stringName)[0].textContent;
+		$('.string-option.'+stringName)[0].textContent = "Copied!";
+		setTimeout(function(){$('.string-option.'+stringName)[0].textContent=text},2e3);
 		try {
 			var wagoString = $('script.wago-string.'+stringName+'.'+currentClass.toLowerCase()).attr('src').split("/")[3];
 		} catch(error){
