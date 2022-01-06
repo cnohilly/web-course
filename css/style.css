@@ -64,6 +64,7 @@ body {
   top: 0px;
   height: 40px;
   width: 100%;
+  z-index: 10;
 }
 #navigation-bar a {
   text-decoration: none;
@@ -76,7 +77,8 @@ body {
   text-align: center;
   font-weight: 600;
   font-size: 24px;
-  border-right: 2px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
 }
 #navigation-bar a:hover {
   background-color: rgb(70, 70, 70);
@@ -89,7 +91,6 @@ body {
 .navigation-submenu {
   display: none;
   position: absolute;
-  /* margin-top: 40px; */
   padding-top: 40px;
 }
 .navigation-submenu a {
