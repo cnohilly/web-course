@@ -1,118 +1,132 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>cDorkk - Home</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Twitch, YouTube and WeakAuras from cDorkk">
-    <meta name="keywords" content="weakauras,wow,world,of,warcraft,twitch,youtube,rpg">
-    <meta name="author" content="Christopher Nohilly">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/weakauras-style.css">
-  </head>
-  <body>
-    <header id="main-header">
-      <section id="site-title-header">
-        <a href="https://www.cdorkk.com"><img id="site-logo" src="../content/DorkkShield.png"></a>
-        <h1 id="site-title">cDORKK</h1>
-        <h4 id="site-subtitle">Twitch, YouTube and WeakAuras</h4>
-      </section>
-      <ul class="profile-menu">
-        <li><a class="profile-menu-trigger" data-trigger="dropdown" href="#">Logged in as cnohilly</a>
-        <ul class="profile-submenu submenu">
-          <li><a href="#">My Account</a></li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Settings</a></li>
-          <li><a href="#">Log Out</a></li>
+<head>
+  <title>cDorkk - Home</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Twitch, YouTube and WeakAuras from cDorkk">
+  <meta name="keywords" content="weakauras,wow,world,of,warcraft,twitch,youtube,rpg">
+  <meta name="author" content="Christopher Nohilly">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/weakauras-style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" aria-label="Fourth navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">cDorkk</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigationbar"
+        aria-controls="navigationbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navigationbar">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Twitch</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">YouTube</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown"
+              aria-expanded="false">WeakAuras</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown04">
+              <li><a class="dropdown-item" href="#">General</a></li>
+              <li><a class="dropdown-item" href="html/weakauras.html">Hunter</a></li>
+              <li><a class="dropdown-item" href="#">Paladin</a></li>
+              <li><a class="dropdown-item" href="#">Druid</a></li>
+            </ul>
+          </li>
         </ul>
+      </div>
+    </div>
+  </nav>
 
-        </li>
+  <section id="ui-section">
+    <section id="class-section">
+      <h2>Classes</h2>
+      <ul>
+        <li class="class-option">Hunter</li>
+        <li class="class-option">Paladin</li>
+        <li class="class-option">Druid</li>
       </ul>
-      <section id="navigation-bar">
-        <ul class="navigation-menu">
-          <li><a href="#" class="navigation-button">Twitch</a></li>
-          <ul class="navigation-submenu">
-            <li><a href="#">cDorkk</a></li>
-            <li><a href="#">Friends</a></li>
-          </ul>
-        </ul>
-        <ul class="navigation-menu" style="margin-left: 152px;">
-          <li><a href="#" class="navigation-button">YouTube</a></li>
-            <ul class="navigation-submenu">
-              <li><a href="#">Channel</a></li>
-              <li><a href="#">Latest</a></li>
-            </ul>
-        </ul>
-        <ul class="navigation-menu" style="margin-left: 304px;">
-          <li><a href="#" class="navigation-button">WeakAuras</a></li>
-            <ul class="navigation-submenu">
-              <li><a href="#">General</a></li>
-              <li><a href="#">Hunter</a></li>
-              <li><a href="#">Paladin</a></li>
-              <li><a href="#">Druid</a></li>
-              <li><a href="#">Demon Hunter</a></li>
-            </ul>
-        </ul>
-      </section>
-    </header>
-
-    <section id="ui-section">
-      <section id="class-section">
-        <h2>Classes</h2>
-        <ul>
-          <li class="class-option">Hunter</li>
-          <li class="class-option">Paladin</li>
-          <li class="class-option">Druid</li>
-        </ul>
-      </section>
-      <section id="image-section">
-        <!-- 
+    </section>
+    <section id="image-section">
+      <!-- 
           Second Class Must be Type of UI element that the image will be associated with in regard to the Strings
          -->
-        <img src="../content/WOWUI-Hunter.jpg" class="ui-base-image">
-        <img src="../content/WOWUI-Hunter.jpg" class="ui-image elvui chatbox">
-        <img src="../content/WOWUI-Hunter.jpg" class="ui-image elvui unitframes">
-        <img src="../content/WOWUI-Hunter.jpg" class="ui-image elvui actionbars">
-        <img src="../content/WOWUI-Hunter.jpg" class="ui-image weakauras1">
-        <img src="../content/WOWUI-Hunter.jpg" class="ui-image weakauras2">
-        <img src="../content/WOWUI-Hunter.jpg" class="ui-image weakauras3">
-        <img src="../content/WOWUI-Hunter.jpg" class="ui-image weakauras4">
-        <img src="../content/WOWUI-Hunter.jpg" class="ui-image weakauras5">
-      </section>
-      <section id="string-section">
-        <h2> UI Strings</h2>
-        <ul>
-          <li class="string-option elvui">ElvUI Profile 
-          </li>
-          <li class="string-option weakauras1">WA: Primary </li>
-          <li class="string-option weakauras2">WA: Secondary </li>
-          <li class="string-option weakauras3">WA: Cooldowns </li>
-          <li class="string-option weakauras4">WA: Covenants </li>
-          <li class="string-option weakauras5">WA: Trinkets </li>
-        </ul>
-      </section>
+      <img src="../content/WOWUI-Hunter.jpg" class="ui-base-image">
+      <img src="../content/WOWUI-Hunter.jpg" class="ui-image elvui chatbox">
+      <img src="../content/WOWUI-Hunter.jpg" class="ui-image elvui unitframes">
+      <img src="../content/WOWUI-Hunter.jpg" class="ui-image elvui actionbars">
+      <img src="../content/WOWUI-Hunter.jpg" class="ui-image weakauras1">
+      <img src="../content/WOWUI-Hunter.jpg" class="ui-image weakauras2">
+      <img src="../content/WOWUI-Hunter.jpg" class="ui-image weakauras3">
+      <img src="../content/WOWUI-Hunter.jpg" class="ui-image weakauras4">
+      <img src="../content/WOWUI-Hunter.jpg" class="ui-image weakauras5">
     </section>
-    <br>
-    <p id="lorem">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent condimentum venenatis justo sed pretium. Quisque bibendum ligula vitae odio volutpat, quis tempor purus eleifend. Integer sodales quam in metus auctor varius. Vestibulum vitae ex ut felis semper ultrices a a justo. Nulla luctus metus vel nulla porttitor, ut vulputate sapien tristique. Fusce condimentum gravida urna, quis finibus est mattis id. Ut rhoncus scelerisque urna, vitae scelerisque nunc mollis ut. Donec sed elementum turpis. Curabitur semper turpis in efficitur bibendum.
-
-Vestibulum non accumsan elit. Nullam id urna nisi. Maecenas dui augue, convallis a ex nec, pellentesque porttitor quam. Donec ut tempus enim, in tincidunt eros. Nulla eu turpis fermentum massa efficitur dictum id nec arcu. Nullam tempor efficitur lobortis. Aenean at orci dui. Praesent nec efficitur ipsum. Fusce auctor ligula vel ipsum porta rutrum. Sed dictum nec ipsum non efficitur. Donec ut turpis quam. Integer molestie, lacus sed tempor lacinia, sapien velit suscipit sem, ut fringilla lacus eros eget massa. Nulla dictum felis nec massa efficitur gravida. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi.
-
-Sed volutpat mi bibendum faucibus aliquet. Donec quis accumsan purus. Maecenas non ullamcorper metus. Phasellus vel risus vel sem cursus tincidunt et eget leo. Maecenas sit amet tellus et nibh ullamcorper mattis vel ut lorem. Aliquam nec tellus aliquam orci dictum efficitur. Duis eu sem dignissim, tincidunt lorem non, aliquet massa. Donec risus lectus, ullamcorper vitae laoreet at, tincidunt ultrices enim. Ut ornare lorem ut massa tempus, et congue felis scelerisque. Proin gravida arcu a fringilla eleifend. Sed eu tortor in neque volutpat vehicula. Etiam feugiat neque sit amet dolor tincidunt porta. Vestibulum in justo euismod, egestas magna in, accumsan urna. Cras et purus nec dolor condimentum efficitur.
-
-Curabitur ultrices felis eu tellus rutrum, eu laoreet orci blandit. Phasellus malesuada purus ipsum, ut porttitor lectus sagittis at. Phasellus vehicula at erat quis dictum. Nulla dapibus risus blandit ipsum vehicula vestibulum. Fusce sed cursus orci. Quisque eu nisl et dui cursus tempus at et arcu. Integer consequat semper risus in blandit. Donec sed magna quis orci vehicula tincidunt. Nunc tincidunt velit eget scelerisque lacinia. Maecenas commodo est sollicitudin elit aliquam, non vestibulum diam dapibus.
-
-Donec sit amet lorem ut risus interdum semper in ut est. Cras placerat nisl ac volutpat consequat. Integer scelerisque auctor lacus at pulvinar. Pellentesque congue, ipsum nec tristique rutrum, sapien tellus pellentesque risus, quis semper felis elit quis orci. Maecenas porta turpis sed erat pretium, et porttitor quam ultricies. Quisque elementum fringilla nisi, vestibulum blandit ante dapibus eu. In euismod nisl id neque faucibus, et pretium nibh laoreet.
-    </p>
-    <section id="wago-section">
-      <script class="wago-string elvui hunter" src="https://wago.io/rO9UEWH5c/embed.js?style=dark"></script>
-      <script class="wago-string elvui paladin" src="https://wago.io/1cNC5sG1W/embed.js?style=dark"></script>
-      <script class="wago-string elvui druid" src="https://wago.io/87rtqWPi8/embed.js?style=dark"></script>
+    <section id="string-section">
+      <h2> UI Strings</h2>
+      <ul>
+        <li class="string-option elvui">ElvUI Profile
+        </li>
+        <li class="string-option weakauras1">WA: Primary </li>
+        <li class="string-option weakauras2">WA: Secondary </li>
+        <li class="string-option weakauras3">WA: Cooldowns </li>
+        <li class="string-option weakauras4">WA: Covenants </li>
+        <li class="string-option weakauras5">WA: Trinkets </li>
+      </ul>
     </section>
+  </section>
+  <br>
+  <p id="lorem">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent condimentum venenatis justo sed pretium. Quisque
+    bibendum ligula vitae odio volutpat, quis tempor purus eleifend. Integer sodales quam in metus auctor varius.
+    Vestibulum vitae ex ut felis semper ultrices a a justo. Nulla luctus metus vel nulla porttitor, ut vulputate sapien
+    tristique. Fusce condimentum gravida urna, quis finibus est mattis id. Ut rhoncus scelerisque urna, vitae
+    scelerisque nunc mollis ut. Donec sed elementum turpis. Curabitur semper turpis in efficitur bibendum.
+
+    Vestibulum non accumsan elit. Nullam id urna nisi. Maecenas dui augue, convallis a ex nec, pellentesque porttitor
+    quam. Donec ut tempus enim, in tincidunt eros. Nulla eu turpis fermentum massa efficitur dictum id nec arcu. Nullam
+    tempor efficitur lobortis. Aenean at orci dui. Praesent nec efficitur ipsum. Fusce auctor ligula vel ipsum porta
+    rutrum. Sed dictum nec ipsum non efficitur. Donec ut turpis quam. Integer molestie, lacus sed tempor lacinia, sapien
+    velit suscipit sem, ut fringilla lacus eros eget massa. Nulla dictum felis nec massa efficitur gravida. Vestibulum
+    ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi.
+
+    Sed volutpat mi bibendum faucibus aliquet. Donec quis accumsan purus. Maecenas non ullamcorper metus. Phasellus vel
+    risus vel sem cursus tincidunt et eget leo. Maecenas sit amet tellus et nibh ullamcorper mattis vel ut lorem.
+    Aliquam nec tellus aliquam orci dictum efficitur. Duis eu sem dignissim, tincidunt lorem non, aliquet massa. Donec
+    risus lectus, ullamcorper vitae laoreet at, tincidunt ultrices enim. Ut ornare lorem ut massa tempus, et congue
+    felis scelerisque. Proin gravida arcu a fringilla eleifend. Sed eu tortor in neque volutpat vehicula. Etiam feugiat
+    neque sit amet dolor tincidunt porta. Vestibulum in justo euismod, egestas magna in, accumsan urna. Cras et purus
+    nec dolor condimentum efficitur.
+
+    Curabitur ultrices felis eu tellus rutrum, eu laoreet orci blandit. Phasellus malesuada purus ipsum, ut porttitor
+    lectus sagittis at. Phasellus vehicula at erat quis dictum. Nulla dapibus risus blandit ipsum vehicula vestibulum.
+    Fusce sed cursus orci. Quisque eu nisl et dui cursus tempus at et arcu. Integer consequat semper risus in blandit.
+    Donec sed magna quis orci vehicula tincidunt. Nunc tincidunt velit eget scelerisque lacinia. Maecenas commodo est
+    sollicitudin elit aliquam, non vestibulum diam dapibus.
+
+    Donec sit amet lorem ut risus interdum semper in ut est. Cras placerat nisl ac volutpat consequat. Integer
+    scelerisque auctor lacus at pulvinar. Pellentesque congue, ipsum nec tristique rutrum, sapien tellus pellentesque
+    risus, quis semper felis elit quis orci. Maecenas porta turpis sed erat pretium, et porttitor quam ultricies.
+    Quisque elementum fringilla nisi, vestibulum blandit ante dapibus eu. In euismod nisl id neque faucibus, et pretium
+    nibh laoreet.
+  </p>
+  <section id="wago-section">
+    <script class="wago-string elvui hunter" src="https://wago.io/rO9UEWH5c/embed.js?style=dark"></script>
+    <script class="wago-string elvui paladin" src="https://wago.io/1cNC5sG1W/embed.js?style=dark"></script>
+    <script class="wago-string elvui druid" src="https://wago.io/87rtqWPi8/embed.js?style=dark"></script>
+  </section>
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../js/main.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
 </html>

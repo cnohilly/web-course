@@ -14,12 +14,12 @@
 
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 300 !important;
+  /* font-family: 'Roboto Condensed', sans-serif; */
+  /* font-weight: 300 !important; */
   color: rgb(230, 230, 230);
-  margin: 200px 0px 200px 0px;
+  margin: 75px 0px 200px 0px;
   background: #0e0e10;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, .5); */
 }
 
 #main-header {
@@ -41,6 +41,7 @@ body {
   text-shadow: 0px 0px 30px black;
   display: inline-flex;
 }
+
 #site-subtitle {
   margin-left: 40px;
   margin-top: 45px;
@@ -54,93 +55,6 @@ body {
 }
 #site-title-header {
   display: inline-flex;
-}
-
-#navigation-bar {
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
-  background-color: rgb(32, 34, 42);
-  position: relative;
-  top: 0px;
-  height: 40px;
-  width: 100%;
-  z-index: 10;
-}
-#navigation-bar a {
-  text-decoration: none;
-  color: white;
-  float: left;
-  display: block;
-  outline: 0;
-  padding: 5px 0px;
-  width: 150px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 24px;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
-}
-#navigation-bar a:hover {
-  background-color: rgb(70, 70, 70);
-}
-.navigation-menu, .navigation-submenu {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-.navigation-submenu {
-  display: none;
-  position: absolute;
-  padding-top: 40px;
-}
-.navigation-submenu a {
-  background-color: rgb(32, 34, 42);
-  border-top: 2px solid black;
-}
-
-.profile-menu {
-  float: right;
-  list-style: none;
-  margin-right: 50px;
-  margin-top: 50px;
-  padding: 0px;
-}
-[data-trigger="dropdown"] {
-  padding-bottom:35px;
-}
-.profile-menu-trigger {
-  text-decoration: none;
-  color:rgb(120, 120, 255);
-}
-
-.profile-submenu li {
-  border: 1px solid black;
-}
-
-.submenu {
-  margin-top: 5px;
-  padding: 0px;
-  border: 1px solid black;
-  list-style: none;
-  box-shadow: 2px 2px 15px rgba(0, 0, 0, .3);
-  display: none;
-  background: rgb(173, 173, 173);
-}
-.submenu.active {
-  display: block;
-}
-
-
-.submenu a {
-    text-shadow: none;
-    padding: 5px 10px;
-    display: block;
-    color: black;
-    letter-spacing: 0px;
-}
-
-.submenu a:hover {
-  background: rgb(129, 129, 129)
 }
 
 #top-stories {
