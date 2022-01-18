@@ -124,7 +124,7 @@ article:active {
   display:block;
   margin: auto;
   border: 1px solid black;
-  width: 1000px;
+  width: 90%;
   max-height: 200px;
   overflow: scroll;
   overflow-x: hidden;
