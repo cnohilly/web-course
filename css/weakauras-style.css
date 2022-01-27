@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 
+.container {
+  min-width: 1050px;
+}
+
 #class-section, #string-section {
   width: 100%;
   padding-top: 20px;
